@@ -21,6 +21,12 @@
   font-family: "SourceCodePro-Semibold";
   src: url("../fonts/SourceCodePro-Semibold.woff") format("woff");
 }
+
+:root {
+  --bg-purple: #1a1a2e;  
+  --purple-light: #3c3c6a;
+}
+
 /* #7069c5 */
 * {
   box-sizing: border-box;
@@ -30,12 +36,18 @@
 }
 
 header {
+  margin: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 0px 10%;
   padding-left: 8%;
-  background-color: #1a1a2e;
+  background-color: var(--bg-purple);
+  border: solid var(--purple-light) 2px;
+  border-radius: 0.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
