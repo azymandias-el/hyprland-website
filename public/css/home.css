@@ -43,11 +43,12 @@ header {
   padding: 0px 10%;
   padding-left: 8%;
   background-color: var(--bg-purple);
-  border: solid var(--purple-light) 2px;
-  border-radius: 0.2rem;
+  border: solid var(--purple-light) 3px;
+  border-radius: 0.6rem;
   position: sticky;
-  top: 0;
+  top: 10px;
   z-index: 10;
+  opacity: 1;
 }
 
 .logo {
@@ -58,8 +59,9 @@ header {
 .logo img {
   width: 190px;
   height: auto;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 .nav__links {
@@ -236,14 +238,14 @@ header {
 /* Mobile Nav */
 
 .menu  {
-  display: none ;
+  display: none;
 }
 
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   left: 0;
   top: 0;
   background-color: #1a1a2e;
